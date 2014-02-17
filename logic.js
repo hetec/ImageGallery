@@ -18,10 +18,7 @@ function insertImg(i){
 	o.setAttribute("alt", "Wallpaper" + ind);
 	o.setAttribute("id", "img" + ind);
 	b.appendChild(o);
-	
 }
-
-
 
 function fill (){
 
@@ -35,12 +32,6 @@ function fill (){
 		events(x + 1);
 		init(x + 1);
 	}
-
 }
 
-
-
-
-
 window.onload = fill;
-
