@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.proj{
+	z-index: 2;
+	position: absolute;
+	top: -25px;
+	left: 15%;
+	width: 70%;
+	height: 50px;
+	min-width: 560px;
+	background-color: white;
+	border-radius: 100px;
+}
+.h0{
+	font-size: 15px;
+	font-weight: 200;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 20px;
+}
+
+#mainImg{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	min-width: 700px;
+}
+
+
+.frame{
+	z-index: 3;
+	border-radius: 10px;
+	position: absolute;
+	top: 300px;
+	left: 15%;
+	width: 70%;
+	min-width: 560px;
+	background-color: white;
+
+}
+
+.frame img{
+	border-radius: 5px;
+	width: 23%;
+	float: left;
+	margin: 1%;
+}
+
+.h1{
+	position: absolute;
+	width: 100%;
+	top: -100px;
+	color: white;
+	font-size: 50px;
+	font-weight: 200;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#test1{
+
+	left: 10px;
+	width: 20%;
+	height: 200px;
+	background-color: blue;
+}
+
+#test2{
+	opacity: 0.9;
+	width: 20%;
+	height: 200px;
+	background-color: red;
+}
