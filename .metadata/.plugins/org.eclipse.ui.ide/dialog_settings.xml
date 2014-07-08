@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="com.aptana.ui.dialogs.ProjectContentsLocationArea">
+		<item value="/home/hetec/Dokumente/projects/web/ImageGallery" key="OUTSIDE_LOCATION"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="285" key="DIALOG_X_ORIGIN"/>
+		<item value="159" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

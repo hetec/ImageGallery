@@ -30,8 +30,8 @@ function fill (){
 	
 	for(var x = 0; x < 30; x++){
 		events(x + 1);
-		init(x + 1);
 	}
+	ani();
 }
 
 window.onload = fill;
