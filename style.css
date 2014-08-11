@@ -22,13 +22,16 @@ body{
 	color: white;
 }
 
-#mainImg{
+
+#mainImg1{
 	z-index: 1;
-	//position: absolute;
+	position: absolute;
 	width: 100%;
-	left: 0;
+	margin-left: 0px;
+	//left: 0;
 	min-width: 700px;
 }
+
 
 #box, .mainBox {
 	width: 100%;
@@ -39,7 +42,7 @@ body{
 	z-index: 3;
 	border-radius: 4.5px;
 	position: relative;
-	top: -150px;
+	top: 600px;
 	margin: 0 auto;
 	width: 800px;
 	background-color: white;
@@ -51,7 +54,7 @@ body{
 
 .shadowLeft{
 	position: absolute;
-	top: -150px;
+	top: 600px;
 	left: 50%;
 	margin-left: -390px;
 	z-index: 2;
@@ -71,7 +74,7 @@ body{
 
 .shadowRight{
 	position: absolute;
-	top: -150px;
+	top: 600px;
 	left: 50%;
 	margin-left: 340px;
 	z-index: 2;
@@ -153,7 +156,7 @@ body{
 	cursor: pointer;
 	z-index: 10;
 	position: absolute;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,1);
 	width: 7%;
 	min-width: 60px;
 	height: 40px;
