@@ -12,7 +12,12 @@
 		<script>
 		$('document').ready(function(){
 			
+			//set number of images
 			var numberImg = 100;
+
+			//-----------------------------------------------------------
+
+			//add images to html file
 			var ind;
 			var imgString;
 			for(var i = 0; i < numberImg; i++){
@@ -31,13 +36,16 @@
 					
 			}
 			
+
+			//change main image to the currently clicked template image
+
 			var imgId = '001';
 			var prevImages = $('.frame').children("a").children("img");
 			prevImages.on('click', function(){
 
 				imgId = ($(this).attr('id')).substring(3,6);
 		
-				$('#mainImg1').attr({src:'img/imgGross/'+ imgId + '.jpg'}).attr({class:'mainImg' + imgId});
+				$('#mainImg1').attr({src:'img/imgBig/'+ imgId + '.jpg'}).attr({class:'mainImg' + imgId});
 
 			});
 			prevImages.on('mouseenter', function(){
@@ -53,6 +61,7 @@
 			
 			//Select the previous img in the list through clicking the left button
 			//If the last image is reached it will be continued with the first image
+
 			$('.left').on('click', function(){
 				imgIdMain = ($('#mainImg1').attr('class')).substring(7,10);
 				//alert(imgIdMain);
@@ -75,11 +84,12 @@
 				}
 
 				//alert(imgIdMain2);
-				$('#mainImg1').attr({src:'img/imgGross/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
+				$('#mainImg1').attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
 			});		
 
 			//Select the next img in the list through clicking the left button
-			//If the first image is reached it will be continued with the last image		
+			//If the first image is reached it will be continued with the last image
+
 			$('.right').on('click', function(){
 				imgIdMain = ($('#mainImg1').attr('class')).substring(7,10);
 				//alert(imgIdMain);
@@ -100,7 +110,7 @@
 				imgIdMain = (imgIdMain);
 				}
 
-				$('#mainImg1').attr({src:'img/imgGross/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
+				$('#mainImg1').attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
 			
 			});	
 
@@ -123,6 +133,7 @@
 
 		
 		//smooth scrolling --> source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
+		
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -137,9 +148,6 @@
 		    }
 		  });
 		});
-
-
-
 		</script>
 		
 	</head>
@@ -153,7 +161,7 @@
 			<div class="proj">
 				<h1 class="h0">hetec</h1>
 			</div>
-			<img src="img/imgGross/001.jpg"  id="mainImg1" class="mainImg001"  alt="Main image1" />
+			<img src="img/imgBig/001.jpg"  id="mainImg1" class="mainImg001"  alt="Main image1" />
 		</div>
 		<div id="box">
 			<div class="shadowLeft"></div>
