@@ -13,7 +13,7 @@
 		$('document').ready(function(){
 			
 			//set number of images
-			var numberImg = 100;
+			var numberImg = 90;
 
 			//-----------------------------------------------------------
 
@@ -45,7 +45,7 @@
 
 				imgId = ($(this).attr('id')).substring(3,6);
 		
-				$('#mainImg1').attr({src:'img/imgBig/'+ imgId + '.jpg'}).attr({class:'mainImg' + imgId});
+				$('#mainImg1').stop(true,false).attr({src:'img/imgBig/'+ imgId + '.jpg'}).attr({class:'mainImg' + imgId});
 
 			});
 			prevImages.on('mouseenter', function(){
@@ -84,7 +84,7 @@
 				}
 
 				//alert(imgIdMain2);
-				$('#mainImg1').attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
+				$('#mainImg1').stop(true,false).attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
 			});		
 
 			//Select the next img in the list through clicking the left button
@@ -110,7 +110,7 @@
 				imgIdMain = (imgIdMain);
 				}
 
-				$('#mainImg1').attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
+				$('#mainImg1').stop(true,false).attr({src:'img/imgBig/'+ imgIdMain + '.jpg'}).attr({class:'mainImg' + imgIdMain + '.jpg'});
 			
 			});	
 
@@ -140,9 +140,9 @@
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
-		        $('html,body').animate({
+		        $('html,body').stop(true,false).animate({
 		          scrollTop: target.offset().top
-		        }, 1000);
+		        }, 500);
 		        return false;
 		      }
 		    }

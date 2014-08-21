@@ -2,6 +2,8 @@ body{
 	margin: 0;
 	padding: 0;
 	position: relative;
+	width: 100%;
+	min-width: 900px;
 }
 
 .proj{
@@ -42,7 +44,7 @@ body{
 	z-index: 3;
 	border-radius: 4.5px;
 	position: relative;
-	top: 600px;
+	top: 450px;
 	margin: 0 auto;
 	width: 800px;
 	background-color: white;
@@ -54,7 +56,7 @@ body{
 
 .shadowLeft{
 	position: absolute;
-	top: 600px;
+	top: 450px;
 	left: 50%;
 	margin-left: -390px;
 	z-index: 2;
@@ -66,6 +68,7 @@ body{
 	-webkit-transform: rotate(-2deg);
  		 -moz-transform: rotate(-2deg);
   				-o-transform: rotate(-2deg);
+					-ms-transform: rotate(-2deg);
 
 	-webkit-box-shadow: -20px 11px 10px 0px rgba(0,0,0,0.8);
 	-moz-box-shadow: -20px 11px 10px 0px rgba(0,0,0,0.8);
@@ -74,7 +77,7 @@ body{
 
 .shadowRight{
 	position: absolute;
-	top: 600px;
+	top: 450px;
 	left: 50%;
 	margin-left: 340px;
 	z-index: 2;
@@ -86,6 +89,7 @@ body{
 	-webkit-transform: rotate(2deg);
  		 -moz-transform: rotate(2deg);
   				-o-transform: rotate(2deg);
+					-ms-transform: rotate(2deg);
 
 	-webkit-box-shadow: 20px 11px 10px 0px rgba(0,0,0,0.8);
 	-moz-box-shadow: 20px 11px 10px 0px rgba(0,0,0,0.8);
@@ -93,6 +97,7 @@ body{
 }
 
 .frame img{
+	border: none;
 	width: 100%;
 
 	-webkit-box-sizing: border-box;
@@ -101,10 +106,9 @@ body{
 	display: inline-block;
 	width: 155px;
 	height: 88px;
-	//background-color: red;
 	margin: 2.5px;
 	margin-top: -1.5px;
-	//border: white solid 5px;
+
 	
 	position: relativ;
 
@@ -120,7 +124,6 @@ body{
           box-sizing: border-box;
 	width: 155px;
 	height: 88px;
-	background-color: red;
 	margin: 2.5px;
 	margin-top: -1.5px;
 	//border: white solid 5px;
